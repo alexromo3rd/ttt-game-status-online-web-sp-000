@@ -61,10 +61,10 @@ end
 def winner(board)
   winning_arr = won?(board)
   if board[winning_arr[0]].include?("X")
-    return "X"
+    "X"
   elsif board[winning_arr[0]].include?("O")
-    return "O"
+    "O"
   else
-    return nil
+    false
   end
 end
