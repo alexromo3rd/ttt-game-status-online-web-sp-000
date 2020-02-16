@@ -60,7 +60,7 @@ end
 
 def winner(board)
   winning_arr = won?(board)
-  if winning_arr.class != Arrayy
+  if winning_arr.class != Array
     nil
   elsif board[winning_arr[0]].include?("X")
     "X"
