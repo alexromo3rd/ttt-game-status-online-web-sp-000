@@ -60,7 +60,7 @@ end
 
 def winner(board)
   winning_arr = won?(board)
-  if winning_arr.include?("X")
+  if board[winning_arr[0]].include?("X")
     return "X"
   else
     return "O"
