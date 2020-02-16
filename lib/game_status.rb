@@ -60,11 +60,11 @@ end
 
 def winner(board)
   winning_arr = won?(board)
-  if board[winning_arr[0]].include?("X")
+  if won?(board) == false
+    false
+  elsif board[winning_arr[0]].include?("X")
     "X"
   elsif board[winning_arr[0]].include?("O")
     "O"
-  else
-    draw?(board)
   end
 end
