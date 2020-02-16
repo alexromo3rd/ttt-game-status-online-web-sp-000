@@ -65,6 +65,6 @@ def winner(board)
   elsif board[winning_arr[0]].include?("O")
     "O"
   else
-    over?(board)
+    draw?(board)
   end
 end
