@@ -41,3 +41,7 @@ def full?(board)
     true
   end
 end
+
+def draw?(board)
+  
+end
