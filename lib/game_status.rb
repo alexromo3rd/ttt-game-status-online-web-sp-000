@@ -61,7 +61,7 @@ end
 def winner(board)
   winning_arr = won?(board)
   if won?(board) == false
-    false
+    nil
   elsif board[winning_arr[0]].include?("X")
     "X"
   else
